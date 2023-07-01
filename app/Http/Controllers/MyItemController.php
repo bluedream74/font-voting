@@ -75,7 +75,7 @@ class MyItemController extends Controller
         $categories = $request->category;
 
         if($request->register_type == 'pay') {
-            
+
             Session::put("front_img", $front_img);
             Session::put("back_img", $back_img);
             Session::put("side_img", $side_img);
@@ -120,7 +120,7 @@ class MyItemController extends Controller
                     ->route('myItem.index')
                     ->with('error', 'Something went wrong.');
             }
-        } 
+        }
         if($request->register_type == 'nopay') {
 
             $item = new Item();

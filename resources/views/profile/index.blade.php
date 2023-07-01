@@ -115,7 +115,7 @@ License: For each use you must have a valid license purchased only from above li
                                     <!--end::Inputs-->
                                 </label>
                                 <!--end::Label-->
-    
+
                                 <!--begin::Cancel-->
                                 <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="cancel" data-bs-toggle="tooltip" aria-label="Cancel avatar" data-bs-original-title="Cancel avatar" data-kt-initialized="1">
                                     <i class="ki-duotone ki-cross fs-2">
@@ -124,7 +124,7 @@ License: For each use you must have a valid license purchased only from above li
                                     </i>
                                 </span>
                                 <!--end::Cancel-->
-    
+
                             </div>
                             <!--end::Image input-->
 
@@ -148,7 +148,7 @@ License: For each use you must have a valid license purchased only from above li
                             <div class="row">
                                 <!--begin::Col-->
                                 <div class="col-lg-6 fv-row">
-                                    <input type="text" name="firstname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="姓" value="{{ Auth::user()->firstname }}" />
+                                    <input type="text" name="firstname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="姓" value="" />
                                     @error('firstname')
                                         <span class="invalid-feedback d-block" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -159,7 +159,7 @@ License: For each use you must have a valid license purchased only from above li
 
                                 <!--begin::Col-->
                                 <div class="col-lg-6 fv-row">
-                                    <input type="text" name="lastname" class="form-control form-control-lg form-control-solid" placeholder="名" value="{{ Auth::user()->lastname }}" />
+                                    <input type="text" name="lastname" class="form-control form-control-lg form-control-solid" placeholder="名" value="" />
                                     @error('lastname')
                                         <span class="invalid-feedback d-block" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -374,7 +374,7 @@ License: For each use you must have a valid license purchased only from above li
                 var base64String = btoa(reader.result);
 
                 // Use the base64-encoded string as needed
-                base64String = 'data:' + file.type + ';base64,' + base64String;
+                // base64String = 'data:' + file.type + ';base64,' + base64String;
 
                 $('#avatar_img').val(base64String);
 

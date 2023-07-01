@@ -394,7 +394,7 @@
                 var base64String = btoa(reader.result);
 
                 // Use the base64-encoded string as needed
-                base64String = 'data:' + file.type + ';base64,' + base64String;
+                // base64String = 'data:' + file.type + ';base64,' + base64String;
 
                 $('#avatar_img').val(base64String);
 

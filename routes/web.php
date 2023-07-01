@@ -80,6 +80,3 @@ Route::post('/changePaypemtState', [UserManaController::class, 'changePaypemtSta
 
 Route::get('/terms', [ProfileController::class, 'terms'])->name('terms');
 Route::get('/use_method', [ProfileController::class, 'use_method'])->middleware('auth')->name('use_method');
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
